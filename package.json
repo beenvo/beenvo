@@ -1,7 +1,7 @@
 {
-  "name": "@grandjs/router",
+  "name": "module-ts-template",
   "version": "0.0.0",
-  "description": "Expressive elegant modern amiable Router for Grand.js ⚡.",
+  "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -23,52 +23,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grandjs/router.git"
+    "url": "git+https://github.com/mongodb-helpers/module-ts-template.git"
   },
-  "keywords": [
-    "grandjs",
-    "router",
-    "grandjs-router",
-    "isomorphic-router",
-    "trouter",
-    "route",
-    "http",
-    "server",
-    "isomorphic",
-    "fast",
-    "crazy"
-  ],
+  "keywords": [],
   "license": "MIT",
   "author": {
     "name": "imed jaberi",
     "email": "imed-jaberi@outlook.com",
     "url": "https://www.3imed-jaberi.com"
   },
-  "dependencies": {
-    "trouter": "^3.2.0",
-    "hashlru": "^2.3.0"
-  },
-  "devDependencies": {
-    "@types/chai": "^4.2.18",
-    "@types/mocha": "^8.2.2",
-    "@types/node": "^15.6.1",
-    "@types/supertest": "^2.0.11",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
-    "chai": "^4.3.4",
-    "eslint": "^7.27.0",
-    "mocha": "^8.4.0",
-    "nyc": "^15.1.0",
-    "rimraf": "^3.0.2",
-    "supertest": "^6.1.3",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.2"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">= 14"
   },
   "bugs": {
-    "url": "https://github.com/grandjs/router/issues"
+    "url": "https://github.com/mongodb-helpers/module-ts-template/issues"
   },
-  "homepage": "https://github.com/grandjs/router#readme"
+  "homepage": "https://github.com/mongodb-helpers/module-ts-template#readme"
 }
