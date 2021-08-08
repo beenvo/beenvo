@@ -3,7 +3,7 @@ docute.init({
   debug: true,
   title: 'Beenvo',
   repo: '3imed-jaberi/beenvo',
-  'edit-link': 'https://github.com/3imed-jaberi/beenvo/tree/master',
+  // 'edit-link': 'https://github.com/3imed-jaberi/beenvo/tree/master',
   twitter: '3imed_jaberi',
   nav: {
     default: [
