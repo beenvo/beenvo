@@ -97,12 +97,12 @@ If you have any problem or suggestion please open an issue.
 
 <!-- ***************** -->
 
-[travis-img]: https://travis-ci.com/3imed-jaberi/beenvo.svg?branch=master
-[travis-url]: https://travis-ci.com/3imed-jaberi/beenvo
+[travis-img]: https://travis-ci.com/beenvo/beenvo.svg?branch=master
+[travis-url]: https://travis-ci.com/beenvo/beenvo
 [coverage-img]: https://coveralls.io/repos/github/3imed-jaberi/beenvo/badge.svg?branch=master
 [coverage-url]: https://coveralls.io/github/3imed-jaberi/beenvo?branch=master
-[npm-badge]: https://img.shields.io/npm/v/@3imed-jaberi/beenvo.svg?style=flat
-[npm-url]: https://www.npmjs.com/package/@3imed-jaberi/beenvo
+[npm-badge]: https://img.shields.io/npm/v/3imed-jaberi/beenvo.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/3imed-jaberi/beenvo
 [license-badge]: https://img.shields.io/badge/license-MIT-green.svg?style=flat
 [license-url]: https://github.com/3imed-jaberi/beenvo/blob/master/LICENSE
 [code-size-badge]: https://img.shields.io/github/languages/code-size/3imed-jaberi/beenvo
