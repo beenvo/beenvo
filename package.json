@@ -26,6 +26,7 @@
     "url": "git+https://github.com/3imed-jaberi/beenvo.git"
   },
   "keywords": [
+    "beenvo",
     "dotenv",
     "env",
     ".env",
