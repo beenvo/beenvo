@@ -56,9 +56,8 @@ function dotEnvParser (dotEnvContent: string) {
     .split(NEW_LINES)
     /* c8 ignore next */
     .filter(line => line.trim().length > 0 && (
-      line !== '\n' ||
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      line !== '\r\n' as any
+      /* c8 ignore next */
+      line !== '\n' || line !== '\r\n' as any // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ))
 
   // clean variables.
