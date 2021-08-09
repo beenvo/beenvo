@@ -1,6 +1,6 @@
 {
   "name": "beenvo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Beenvo let you loads environment variables from files (support many files extensions) for Node.js projects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
