@@ -2,6 +2,10 @@
 
 ### v0.2.1 (10 Aug 2021)
 
+- fix npm url and badge inside the README.md
+
+### v0.2.1 (10 Aug 2021)
+
 - fix lint warn
 
 ### v0.2.0 (10 Aug 2021)
