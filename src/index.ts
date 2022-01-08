@@ -1,7 +1,7 @@
 /*!
  * beenvo
  *
- * Copyright(c) 2021 Imed Jaberi
+ * Copyright(c) 2021-2020 Imed Jaberi
  * MIT Licensed
  */
 
@@ -22,7 +22,7 @@ import { resolve as pResolve, extname as pExtname, sep as pSeperator } from 'pat
  *
  * @api private
  */
-function iniParser (iniAndPropertiesContent: string) {
+function iniParser(iniAndPropertiesContent: string) {
   return _iniParser(iniAndPropertiesContent, {
     sections: true,
     comments: [';', '#'],
@@ -36,7 +36,7 @@ function iniParser (iniAndPropertiesContent: string) {
  *
  * @api private
  */
-function jsonParser (jsonContent: string) {
+function jsonParser(jsonContent: string) {
   return JSON.parse(jsonContent)
 }
 
@@ -45,7 +45,7 @@ function jsonParser (jsonContent: string) {
  *
  * @api private
  */
-function dotEnvParser (dotEnvContent: string) {
+function dotEnvParser(dotEnvContent: string) {
   // constants.
   const NEW_LINES = /\r?\n|\r/
   const SINGLE_QUOTES = '\''
@@ -90,7 +90,7 @@ function dotEnvParser (dotEnvContent: string) {
  *
  * @api private
  */
-function getType (filePath: string): string {
+function getType(filePath: string): string {
   // extract the file name.
   const [fileName] = filePath.split(pSeperator).reverse()
 
@@ -114,7 +114,7 @@ function getType (filePath: string): string {
  *
  * @api private
  */
-function getParser (type) {
+function getParser(type) {
   return {
     yaml: yamlParser,
     yml: yamlParser,
@@ -137,10 +137,10 @@ export type BeenvoConfig = {
  *
  * @api public
  */
-export function beenvo ({ path = '.env', cleanUp = false }: BeenvoConfig): void {
+function beenvo({ path, cleanUp }: BeenvoConfig): void {
   // resolve the dot-env file path.
-  const filePath = pResolve(process.cwd(), path)
-  
+  const filePath = pResolve(process.cwd(), path || '.env')
+
   // extract the file content.
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf8' })
 
@@ -157,13 +157,14 @@ export function beenvo ({ path = '.env', cleanUp = false }: BeenvoConfig): void 
   const variables = type === 'env'
     ? parsedResult
     : Object
-        .keys(parsedResult)
-        .map((key) => ({ key: key.toUpperCase(), value: parsedResult[key] }))
+      .keys(parsedResult)
+      .map((key) => ({ key: key.toUpperCase(), value: parsedResult[key] }))
 
   // process variables with 'process.env'.
   for (const { key, value } of variables) {
     // remove variables from 'process.env'.
-    if (cleanUp) {
+    // eslint-disable-next-line no-extra-boolean-cast
+    if (!!cleanUp) {
       delete process.env[key]
       continue
     }
@@ -177,4 +178,7 @@ export function beenvo ({ path = '.env', cleanUp = false }: BeenvoConfig): void 
  * Expose `beenvo()`.
  */
 
-export { beenvo as default }
+export default beenvo
+
+// support common js
+module.exports = beenvo
