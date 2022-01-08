@@ -137,9 +137,9 @@ export type BeenvoConfig = {
  *
  * @api public
  */
-function beenvo({ path, cleanUp }: BeenvoConfig): void {
+function beenvo(beenvoConfig: BeenvoConfig): void {
   // resolve the dot-env file path.
-  const filePath = pResolve(process.cwd(), path || '.env')
+  const filePath = pResolve(process.cwd(), beenvoConfig?.path || '.env')
 
   // extract the file content.
   const fileContent = fs.readFileSync(filePath, { encoding: 'utf8' })
@@ -164,7 +164,7 @@ function beenvo({ path, cleanUp }: BeenvoConfig): void {
   for (const { key, value } of variables) {
     // remove variables from 'process.env'.
     // eslint-disable-next-line no-extra-boolean-cast
-    if (!!cleanUp) {
+    if (!!beenvoConfig?.cleanUp) {
       delete process.env[key]
       continue
     }
