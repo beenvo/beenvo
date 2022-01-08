@@ -1,17 +1,22 @@
 # CHANGE LOG
 
+### v0.3.0 (10 Aug 2021)
+
+- fix export and default value behave.
+- update deps.
+
+### v0.2.2 (10 Aug 2021)
+
+- fix npm url and badge inside the README.md.
+
 ### v0.2.1 (10 Aug 2021)
 
-- fix npm url and badge inside the README.md
-
-### v0.2.1 (10 Aug 2021)
-
-- fix lint warn
+- fix lint warn.
 
 ### v0.2.0 (10 Aug 2021)
 
-- initial release [ignored by npm]
+- initial release [ignored by npm].
 
 ### v0.1.0 (9 Aug 2021)
 
-- initial release [ignored by npm]
+- initial release [ignored by npm].
