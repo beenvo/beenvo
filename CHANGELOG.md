@@ -1,5 +1,9 @@
 # CHANGE LOG
 
+### v0.4.0 (08 Jan 2022)
+
+- clean release
+
 ### v0.3.1 (08 Jan 2022)
 
 - fix publish problem.
