@@ -1,8 +1,12 @@
 # CHANGE LOG
 
+### v0.5.0 (08 Jan 2022)
+
+- improve the check behave for default value.
+
 ### v0.4.0 (08 Jan 2022)
 
-- clean release
+- clean release.
 
 ### v0.3.1 (08 Jan 2022)
 
