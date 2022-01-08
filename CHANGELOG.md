@@ -1,6 +1,10 @@
 # CHANGE LOG
 
-### v0.3.0 (10 Aug 2021)
+### v0.3.1 (08 Jan 2022)
+
+- fix publish problem.
+
+### v0.3.0 (08 Jan 2022)
 
 - fix export and default value behave.
 - update deps.
