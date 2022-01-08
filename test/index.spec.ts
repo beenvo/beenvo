@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 
-import { beenvo } from '../src'
+import beenvo from '../src'
 
 describe('beenvo', () => {
   it('should export a function', () => {
